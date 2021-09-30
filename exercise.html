@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>blog</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Fitness</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  " href="/about.html">About </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/exercise.html">Exercises</a></li>
+
+                            <li><a class="dropdown-item" href="/meditation.html">Meditation/Yoga</a></li>
+                            <li><a class="dropdown-item" href="/diet.html">Healthy diet</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--login-->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Fitness</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--signup-->
+
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Get an Fitness Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+
+
+                        <div class="row mb-3">
+                            <label for="inputtext3" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputtext3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label for="cinputPassword3" class="col-sm-2 col-form-label"> Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="cpassword" class="form-control" id="cinputPassword3">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container my-6">
+        <h1><strong>Exercise</strong></h1>
+        <p class="lead">Exercise is any bodily activity that enhances or maintains physical fitness and overall health
+            and wellness.
+            It is performed for various reasons: to aid growth and improve strength, prevent aging, develop muscles and
+            the cardiovascular system, hone athletic skills, weight loss or maintenance, improve health,or simply for
+            enjoyment. Many individuals choose to exercise outdoors where they can congregate in groups, socialize, and
+            improve well-being as well as mental health.
+
+            In terms of health benefits, the amount of recommended exercise depends upon the goal, the type of exercise,
+            and the age of the person. Even doing a small amount of exercise is healthier than doing none.</p>
+
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">“To enjoy the glow of good health, you must exercise.” </h2>
+                <p class="lead">Physical activity or exercise can improve your health and reduce the risk of developing
+                    several diseases like type 2 diabetes, cancer and cardiovascular disease. Physical activity and
+                    exercise can have immediate and long-term health benefits. Most importantly, regular activity can
+                    improve your quality of life.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                    height="500" src="img/11.jpg" alt="">
+
+            </div>
+        </div>
+
+
+        <h1><strong>5 Best Exercises for Everyone</strong></h1>
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">1.) Lunges <span class="text-muted"></h2>
+                    <p class="lead">Challenging your balance is an essential part of a well-rounded exercise routine.
+                        Lunges do just that, promoting functional movement, while also increasing strength in your legs
+                        and glutes.</p>
+                    <ol class="list-group list-group-numbered lead">
+                        <li>Start by standing with your feet shoulder-width apart and arms down at your sides.
+                        </li>
+                        <li>Take a step forward with your right leg and bend your right knee as you do so, stopping when
+                            your thigh is parallel to the ground. Ensure that your right knee doesn’t extend past your
+                            right foot.</li>
+                        <li>Push up off your right foot and return to the starting position. Repeat with your left leg.
+                            This is one rep.</li>
+                        <li>Complete 10 reps for 3 sets.</li>
+                    </ol>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="500" src="img/12.jpg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">2.) Pushups <span class="text-muted"></h2>
+                    <p class="lead">Pushups are one of the most basic, yet effective, body weight moves you can perform
+                        because of the number of muscles that are recruited to perform them.
+
+                    </p>
+                    <ol class="list-group list-group-numbered lead">
+                        <li>Start in a plank position. Your core should be tight, shoulders pulled down and back, and
+                            your neck neutral.</li>
+                        <li>Bend your elbows and begin to lower your body down to the floor. When your chest grazes it,
+                            extend your elbows and return to the start. Focus on keeping your elbows close to your body
+                            during the movement.</li>
+                        <li>Complete 3 sets of as many reps as possible.</li>
+                    </ol>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="500" src="img/13.jpg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">3.)Squats<span class="text-muted"></h2>
+                    <p class="lead">Squats increase lower body and core strength, as well as flexibility in your lower
+                        back and hips. Because they engage some of the largest muscles in the body, they also pack a
+                        major punch in terms of calories burned.
+
+
+                    </p>
+                    <ol class="list-group list-group-numbered lead">
+                        <li>Start by standing straight, with your feet slightly wider than shoulder-width apart, and
+                            your arms at your sides.</li>
+                        <li>Brace your core and, keeping your chest and chin up, push your hips back and bend your knees
+                            as if you’re going to sit in a chair.</li>
+                        <li>Ensuring your knees don’t bow inward or outward, drop down until your thighs are parallel to
+                            the ground, bringing your arms out in front of you in a comfortable position. Pause for one
+                            second, then extend your legs and return to the starting position.</li>
+                        <li>Complete 3 sets of 20 reps.</li>
+                    </ol>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="500" src="img/14.jpg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">4.)Dumbbell rows <span class="text-muted"></h2>
+                    <p class="lead">Not only will these make your back look killer in that dress, but dumbbell rows are
+                        also another compound exercise that strengthens multiple muscles in your upper body. Choose a
+                        moderate-weight dumbbell and ensure that you’re squeezing at the top of the movement.
+
+                    </p>
+                    <ol class="list-group list-group-numbered lead">
+                        <li>Start with a dumbbell in each hand. We recommend no more than 10 pounds for beginners.</li>
+                        <li>Bend forward at the waist so your back is at a 45-degree angle to the ground. Be certain not
+                            to arch your back. Let your arms hang straight down. Ensure your neck is in line with your
+                            back and your core is engaged.</li>
+                        <li>Starting with your right arm, bend your elbow and pull the weight straight up toward your
+                            chest, making sure to engage your lat, and stopping just below your chest.
+                        </li>
+                        <li>Return to the starting position and repeat with the left arm. This is one rep. Repeat 10
+                            times for 3 sets.</li>
+                    </ol>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="500" src="img/15.jpg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row featurette d-flex justify-content-center align-items-center">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">5.) Planks <span class="text-muted"></h2>
+                    <p class="lead">Planks are an effective way to target both your abdominal muscles and your whole
+                        body. Planking stabilizes your core without straining your back the way situps or crunches
+                        might.
+
+
+                    </p>
+                    <ol class="list-group list-group-numbered lead">
+                        <li>Begin in a pushup position with your hand and toes firmly planted on the ground, your back
+                            straight, and your core tight.</li>
+                        <li>Keep your chin slightly tucked and your gaze just in front of your hands.</li>
+                        <li>Take deep controlled breaths while maintaining tension throughout your entire body, so your
+                            abs, shoulders, triceps, glutes and quads are all engaged.</li>
+                        <li>Complete 2-3 sets of 30 second holds to start</li>
+                    </ol>
+                </div>
+                <div class="col-md-5">
+                    <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="400"
+                        height="500" src="img/16.jpg" alt="">
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+            </a>
+
+
+        </footer>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
